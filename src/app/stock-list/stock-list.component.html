@@ -1,0 +1,24 @@
+
+<div class="col-md-6">
+  <h2>Stocks</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Stock Id</th>
+        <th>Stock Name</th>
+        <th>Stock Price</th>
+        <th>Stock Field</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let stock of stocks | async">
+        <td>{{ stock.stock_id }}</td>
+        <td>{{ stock.stock_name }}</td>
+        <td>{{ stock.stock_price }}</td>
+        <td>{{ stock.stock_field }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
