@@ -3,17 +3,17 @@
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="nae" required [(ngModel)]="stock.StockName" name="name">
+      <input type="text" class="form-control" id="nae" required [(ngModel)]="stock.stock_name" name="name">
     </div>
 
     <div class="form-group">
       <label for="price">Price</label>
-      <input type="number" class="form-control" id="price" required [(ngModel)]="stock.StockPrice" name="price">
+      <input type="number" class="form-control" id="price" required [(ngModel)]="stock.stock_price" name="price">
     </div>
 
     <div class="form-group">
       <label for="field">Field</label>
-      <input type="text" class="form-control" id="field" required [(ngModel)]="stock.StockField" name="field">
+      <input type="text" class="form-control" id="field" required [(ngModel)]="stock.stock_field" name="field">
     </div>
 
     <button type="submit" class="btn btn-success">Submit</button>
