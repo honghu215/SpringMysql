@@ -7,12 +7,12 @@
 * Create Event Scheduler  
 
     ```MySQL
-     CREATE EVENT event_name 
+     CREATE EVENT updatePrice
         ON SCHEDULE  
             EVERY 5 SECOND  
                 DO
                     UPDATE stock
-                    SET stock_price = stock_price + round((-1+2*rand())*10, 2);
+                    SET stock_price = round(stock_price + (-1  +  2 * rand() * 10), 3);
     ```
 
 * Turn On/Off Event Scheduler
@@ -25,5 +25,5 @@
 * Delete event
 
     ```MySQL
-    DELETE EVENT event_name
+    DELETE EVENT updatePrice
     ```
