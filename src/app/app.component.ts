@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular6SpringBoot-Client-StockMarket';
+  title = 'Financial Risk Management';
 }
