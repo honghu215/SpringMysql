@@ -1,0 +1,29 @@
+h3 {
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+}
+
+.list {
+    margin: 50px;
+    margin-left: 40%;
+    text-decoration: fuchsia;
+}
+
+label {
+    font-size: 25px;
+    color: rgb(179, 131, 28);
+}
+
+.form-group {
+    height: 60px;
+    width: 300px;
+}
+
+input{
+    height: 35px;
+}
+
+button {
+    font-size: 20px;
+}

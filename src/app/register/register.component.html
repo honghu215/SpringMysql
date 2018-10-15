@@ -1,22 +1,24 @@
-<h3>Register</h3>
+<h3>Registration</h3>
 
-<div [hidden]="submitted" style="width: 300px">
+<div [hidden]="submitted" class="list">
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" required [(ngModel)]="user.name" name="name">
+      <!-- <label for="name">Name</label> -->
+      <input type="text" class="form-control" id="name" placeholder="User Names" required [(ngModel)]="user.name" name="name">
     </div>
 
     <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" class="form-control" id="password" required [(ngModel)]="user.password" name="password">
+      <!-- <label for="password">Password</label> -->
+      <input type="password" class="form-control" id="password" placeholder="Password" required [(ngModel)]="user.password" name="password">
     </div>
 
     <div class="form-group">
-      <label for="email">Email</label>
-      <input type="text" class="form-control" id="email" required [(ngModel)]="user.email" name="email">
+      <!-- <label for="email">Email</label> -->
+      <input type="text" class="form-control" id="email" placeholder="Email" required [(ngModel)]="user.email" name="email">
     </div>
-
+    
+    <br>
+    
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
 

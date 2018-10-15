@@ -7,8 +7,8 @@ import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
     { path: 'register', component: RegisterComponent },
-    { path: 'Stock_List', component: StockListComponent },
-    { path: 'Add', component: CreateStockComponent }
+    { path: 'stock_list', component: StockListComponent },
+    { path: 'add', component: CreateStockComponent }
 ];
 
 @NgModule({
