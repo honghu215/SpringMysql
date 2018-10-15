@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 
 export class StockService {
 
-    private baseUrl = 'http://localhost:8080/api/stocks';
+    private baseUrl = 'http://localhost:8080/api/';
 
     constructor(private http: HttpClient) { }
 
@@ -21,6 +21,6 @@ export class StockService {
     }
 
     getStockList(): Observable<any> {
-        return this.http.get(`${this.baseUrl}`);
+        return this.http.get(`${this.baseUrl}` + `/stocks`);
     }
 }
